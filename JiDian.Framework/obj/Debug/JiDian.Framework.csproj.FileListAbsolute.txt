@@ -1,0 +1,24 @@
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.Framework.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.Framework.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\NVelocity.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\obj\Debug\JiDian.Framework.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\obj\Debug\JiDian.Framework.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.BLL.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.Model.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.DAL.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.Model.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.BLL.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Framework\bin\Debug\JiDian.DAL.pdb
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.Framework.dll
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.Framework.pdb
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.BLL.dll
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.Model.dll
+D:\JiDian\JiDian.Framework\bin\Debug\NVelocity.dll
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.DAL.dll
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.BLL.pdb
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.Model.pdb
+D:\JiDian\JiDian.Framework\bin\Debug\JiDian.DAL.pdb
+D:\JiDian\JiDian.Framework\obj\Debug\JiDian.Framework.csprojResolveAssemblyReference.cache
+D:\JiDian\JiDian.Framework\obj\Debug\JiDian.Framework.dll
+D:\JiDian\JiDian.Framework\obj\Debug\JiDian.Framework.pdb

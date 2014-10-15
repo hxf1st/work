@@ -1,0 +1,5 @@
+D:\MainServiceHD.root\Rmyth.Code.Business\Rmyth.Code.Business\bin\Debug\Rmyth.Code.Business.exe
+D:\MainServiceHD.root\Rmyth.Code.Business\Rmyth.Code.Business\bin\Debug\Rmyth.Code.Business.pdb
+D:\MainServiceHD.root\Rmyth.Code.Business\Rmyth.Code.Business\obj\Debug\ResolveAssemblyReference.cache
+D:\MainServiceHD.root\Rmyth.Code.Business\Rmyth.Code.Business\obj\Debug\Rmyth.Code.Business.exe
+D:\MainServiceHD.root\Rmyth.Code.Business\Rmyth.Code.Business\obj\Debug\Rmyth.Code.Business.pdb

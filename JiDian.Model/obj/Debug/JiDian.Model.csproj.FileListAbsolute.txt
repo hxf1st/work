@@ -1,0 +1,9 @@
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Model\bin\Debug\JiDian.Model.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Model\bin\Debug\JiDian.Model.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Model\obj\Debug\JiDian.Model.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.Model\obj\Debug\JiDian.Model.pdb
+D:\JiDian\JiDian.Model\bin\Debug\JiDian.Model.dll
+D:\JiDian\JiDian.Model\bin\Debug\JiDian.Model.pdb
+D:\JiDian\JiDian.Model\obj\Debug\JiDian.Model.dll
+D:\JiDian\JiDian.Model\obj\Debug\JiDian.Model.pdb

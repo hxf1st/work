@@ -1,0 +1,235 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeBehind="main.aspx.cs" Inherits="JiDian.Web.main" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8" />
+  <meta name="description" content="机电">
+  <title>机电</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/static/css/ace-fonts.css" />
+  <link rel="stylesheet" href="/static/css/ace.min.css" id="main-ace-style" />
+  <link rel="stylesheet" href="/static/css/layout.css" />
+
+  <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/static/css/ace-part2.min.css" />
+  <![endif]-->
+
+  <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/static/css/ace-ie.min.css" />
+  <![endif]-->
+
+  <!--[if lte IE 8]>
+  <script src="/static/js/html5shiv.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!--[if IE]>
+    <style type="text/css">
+      button.close{ float:inherit }
+    </style>
+  <![endif]-->
+</head>
+
+<body class="no-skin">
+
+  <div id="navbar" class="navbar navbar-default navbar-collapse h-navbar">
+    <div class="navbar-container" id="navbar-container">
+      <div class="navbar-header pull-left">
+        <a href="#" class="navbar-brand">
+          <small><i class="fa fa-cube"></i> 机电系统 </small>
+        </a>
+
+        <button class="pull-right navbar-toggle navbar-toggle-img collapsed" type="button" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu">
+          <span class="sr-only">Toggle user menu</span>
+          <img class="nav-user-photo" src="/static/avatars/avatar.png"/>
+        </button>
+
+        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler">
+          <span class="sr-only">Toggle sidebar</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="navbar-buttons navbar-header pull-right collapse navbar-collapse" role="navigation">
+        <ul class="nav ace-nav">
+          <li class="transparent">
+            <a href="/notice" target="_blank">
+              <i class="ace-icon fa fa-bell icon-animated-bell"></i>
+              <span class="badge badge-important">8</span>
+            </a>
+          </li>
+          <!-- user -->
+          <li class="light-blue">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+              <img class="nav-user-photo" src="/static/avatars/avatar.png"/>
+              <span class="user-info">
+                <small>欢迎使用</small> <%= JiDian.Framework.UserData.GetUserName() %>
+              </span>
+              <i class="ace-icon fa fa-caret-down"></i>
+            </a>
+
+            <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+              <li><a href="default.aspx?qut=1"><i class="ace-icon fa fa-power-off"></i> 退出</a></li>
+            </ul>
+          </li>
+          <!-- user -->
+
+        </ul>
+      </div>
+
+      <nav id="navbar" role="navigation" class="navbar-menu pull-left collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a class="home" href="javascript:void(0)" data-url="{{url_for('node_basic.actions',group='home')}}" data-label="首页">首页</a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">系统管理 
+              <i class="ace-icon fa fa-angle-down bigger-110"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-light-blue dropdown-caret">
+              <li><a class="home" href="javascript:void(0)" data-url="sys/index.aspx" data-label="功能导航"><i class="ace-icon fa fa-home bigger-110 blue"></i> 功能导航 </a></li>
+              <li><a class="nav" href="javascript:void(0)" data-url="sys/pages.aspx" data-label="页面列表"><i class="ace-icon fa fa-eye bigger-110 blue"></i> 页面列表 </a></li>
+              <li><a class="nav" href="javascript:void(0)" data-url="sys/users.aspx" data-label="用户管理"><i class="ace-icon fa fa-eye bigger-110 blue"></i> 用户管理 </a></li>
+              <li><a class="nav" href="javascript:void(0)" data-url="sys/roles.aspx" data-label="角色管理"><i class="ace-icon fa fa-eye bigger-110 blue"></i> 角色管理 </a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+
+  <div class="main-container" id="main-container">
+
+    <div id="sidebar" class="sidebar responsive compact">
+      <ul class="nav nav-list">
+        <li class="highlight">
+          <a class="nav" href="javascript:void(0)" data-url="19.aspx" data-label="审核下单">
+            <i class="menu-icon fa fa-flag"></i> 
+            <span class="menu-text"> 审核下单 </span>
+          </a>
+        </li>
+
+        <li class="highlight">
+          <a class="nav" href="javascript:void(0)" data-url="20.aspx" data-label="调度提货">
+            <i class="menu-icon fa fa-flag"></i> 
+            <span class="menu-text"> 调度提货 </span>
+          </a>
+        </li>
+
+        <li class="highlight">
+          <a class="nav" href="javascript:void(0)" data-url="21.aspx" data-label="收货开票">
+            <i class="menu-icon fa fa-flag"></i> 
+            <span class="menu-text"> 收货开票 </span>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <noscript>
+        <center><h4>请启用浏览器javascript</h4></center>
+      </noscript>
+    
+      <div class="page-content">
+        <div class="page-content-area">
+          <div class="row">
+
+            <div id="tabs">
+              <ul class="nav nav-tabs" id="tab_ul" style="height:35px"></ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+      <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+    </a>
+  </div>
+
+  <!--[if !IE]> -->
+  <script type="text/javascript">
+  	window.jQuery || document.write("<script src='/static/js/jquery.min.js'>" + "<" + "/script>");
+  </script>
+
+  <!-- <![endif]-->
+
+  <!--[if IE]>
+  <script type="text/javascript">
+   window.jQuery || document.write("<script src='/static/js/jquery1x.min.js'>"+"<"+"/script>");
+  </script>
+  <![endif]-->
+  <script type="text/javascript">
+  	if ('ontouchstart' in document.documentElement) document.write("<script src='/static/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+  </script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/ace.min.js"></script>
+  <script src="/static/js/jquery.tabPages.js"></script>
+  <script type="text/javascript">
+  	var homeTab;
+  	jQuery(function($) {
+  		$(window).bind('resize', function() {
+  			tabs.resizePanelContainer();
+  		});
+  		tabs = $('#tabs').tabPages();
+  		homeTab = tabs.add(newTab("home.aspx", "首页1", true))
+
+  		$("a.nav").click(function() {
+  			var url = $(this).attr("data-url"),
+          label = $(this).attr("data-label");
+  			tabs.add(newTab(url, label, false));
+  			navchange(url);
+  		})
+
+  		$("a.home").click(function() {
+  			var url = $(this).attr("data-url"),
+          label = $(this).attr("data-label");
+  			tabs.refresh(homeTab, url, label);
+  			navchange(url);
+  		})
+  	})
+
+  	function newTab(url, label, lock) {
+  		return {
+  			url: url,
+  			label: label,
+  			lock: lock,
+  			onTabRegister: function(header, panel) {
+  				header.find("a").on('shown.bs.tab', function(e) {
+  					var targetURL = panel.find(' > iframe:first').attr('src');
+  					navchange(targetURL);
+  				})
+  			},
+  			onTabClose: function(nextTab) {
+  				var targetURL = nextTab.panel.find(' > iframe:first').attr('src');
+  				navchange(targetURL);
+  			}
+  		}
+  	}
+
+  	function navchange(targetURL) {
+  		$("#sidebar li, #navbar li").removeClass("active");
+  		var selector = "a[data-url='" + targetURL + "']"
+  		var element = $(selector);
+  		element.parent().addClass("active");
+  		element.parent().parent().parent().addClass("active");
+  	}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiDian.Web", "JiDian.Web\JiDian.Web.csproj", "{0073FF21-D4ED-40F7-A8D2-639AC1B6CA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiDian.Framework", "JiDian.Framework\JiDian.Framework.csproj", "{439A7B87-6DBF-4C0B-8A77-0E606FBF2AF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiDian.Model", "JiDian.Model\JiDian.Model.csproj", "{23AB5EDA-B381-4B29-A1C8-223E12F042D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiDian.DAL", "JiDian.DAL\JiDian.DAL.csproj", "{0AFA1537-3AD7-45D7-A38C-7CE3127A2E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiDian.BLL", "JiDian.BLL\JiDian.BLL.csproj", "{FA2A025D-5EEA-4CCA-9E36-A8C52DFBC034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiDian.Business", "Rmyth.Code.Business\Rmyth.Code.Business\JiDian.Business.csproj", "{06A7A2C8-93F8-498C-8CC8-C70C154CC296}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0073FF21-D4ED-40F7-A8D2-639AC1B6CA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0073FF21-D4ED-40F7-A8D2-639AC1B6CA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0073FF21-D4ED-40F7-A8D2-639AC1B6CA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0073FF21-D4ED-40F7-A8D2-639AC1B6CA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{439A7B87-6DBF-4C0B-8A77-0E606FBF2AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{439A7B87-6DBF-4C0B-8A77-0E606FBF2AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{439A7B87-6DBF-4C0B-8A77-0E606FBF2AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{439A7B87-6DBF-4C0B-8A77-0E606FBF2AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23AB5EDA-B381-4B29-A1C8-223E12F042D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23AB5EDA-B381-4B29-A1C8-223E12F042D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23AB5EDA-B381-4B29-A1C8-223E12F042D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23AB5EDA-B381-4B29-A1C8-223E12F042D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AFA1537-3AD7-45D7-A38C-7CE3127A2E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AFA1537-3AD7-45D7-A38C-7CE3127A2E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AFA1537-3AD7-45D7-A38C-7CE3127A2E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AFA1537-3AD7-45D7-A38C-7CE3127A2E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2A025D-5EEA-4CCA-9E36-A8C52DFBC034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2A025D-5EEA-4CCA-9E36-A8C52DFBC034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2A025D-5EEA-4CCA-9E36-A8C52DFBC034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2A025D-5EEA-4CCA-9E36-A8C52DFBC034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A7A2C8-93F8-498C-8CC8-C70C154CC296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A7A2C8-93F8-498C-8CC8-C70C154CC296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A7A2C8-93F8-498C-8CC8-C70C154CC296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A7A2C8-93F8-498C-8CC8-C70C154CC296}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

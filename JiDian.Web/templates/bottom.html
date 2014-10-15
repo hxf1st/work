@@ -1,0 +1,36 @@
+﻿
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/ace.min.js"></script>
+  <script src="/static/js/jquery.drag.js"></script>
+  <script src="/static/js/jquery.dataTables.min.js"></script>
+  <script src="/static/js/jquery.dataTables.bootstrap.js"></script>
+	<script src="/static/js/jquery.validate.js"></script>
+	<script src="/static/js/jquery.form.js"></script>
+  <script type="text/javascript">
+    jQuery.extend(jQuery.fn.dataTable.defaults, {
+      searching: false,
+      ordering: false,
+      orderClasses: false,
+      retrieve: true,
+      lengthChange: true,
+      pageLength: 15,
+      lengthMenu: [[10, 15, 30, 50], [10, 15, 30, 50]],
+      scrollY: "100%",
+      scrollCollapse: true,
+      language: {
+        paginate: {
+          first: "<<",
+          last: ">>",
+          next: ">",
+          previous: "<"
+        },
+        info: "&nbsp;共 _TOTAL_ 条记录",
+        lengthMenu: "_MENU_ 条/页",
+        infoEmpty: "没有记录",
+        emptyTable: "no data"
+      }
+    });
+  </script>
+
+</body>
+</html>

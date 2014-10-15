@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Register</title>
+
+    <meta name="description" content="User login page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
+
+    <!-- text fonts -->
+    <link rel="stylesheet" href="/static/css/ace-fonts.css" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="/static/css/ace.min.css" />
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/static/css/ace-part2.min.css" />
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/static/css/ace-ie.min.css" />
+    <![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="login-layout light-login">
+    <div class="main-container">
+      <div class="main-content">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="login-container">
+              <div class="center">
+                <h1>
+                  <i class="ace-icon fa fa-cube green"></i>
+                  <span class="green" id="id-text2">在线下单平台</span>
+                </h1>
+              </div>
+
+              <div class="space-6"></div>
+
+              <div class="position-relative">
+
+                <div class="signup-box widget-box no-border visible">
+                  <div class="widget-body">
+                    <div class="widget-main">
+                      <h4 class="header green lighter bigger">
+                        <i class="ace-icon fa fa-users blue"></i>
+                        新用户注册
+                      </h4>
+
+                      <div class="space-6"></div>
+                      <p> 输入您的注册信息: </p>
+
+                      <form>
+                        <fieldset>
+                          <label class="block clearfix">
+                            <span class="block input-icon input-icon-right">
+                              <input type="email" class="form-control" placeholder="邮箱" />
+                              <i class="ace-icon fa fa-envelope"></i>
+                            </span>
+                          </label>
+
+                          <label class="block clearfix">
+                            <span class="block input-icon input-icon-right">
+                              <input type="text" class="form-control" placeholder="用户名" />
+                              <i class="ace-icon fa fa-user"></i>
+                            </span>
+                          </label>
+
+                          <label class="block clearfix">
+                            <span class="block input-icon input-icon-right">
+                              <input type="password" class="form-control" placeholder="密码" />
+                              <i class="ace-icon fa fa-lock"></i>
+                            </span>
+                          </label>
+
+                          <label class="block clearfix">
+                            <span class="block input-icon input-icon-right">
+                              <input type="password" class="form-control" placeholder="确认密码" />
+                              <i class="ace-icon fa fa-retweet"></i>
+                            </span>
+                          </label>
+
+                          <label class="block">
+                            <input type="checkbox" class="ace" />
+                            <span class="lbl">
+                              我同意
+                              <a href="#">用户协议</a>
+                            </span>
+                          </label>
+
+                          <div class="space-24"></div>
+
+                          <div class="clearfix">
+                            <button type="reset" class="width-30 pull-left btn btn-sm">
+                              <i class="ace-icon fa fa-refresh"></i>
+                              <span class="bigger-110">重填</span>
+                            </button>
+
+                            <button type="button" class="width-65 pull-right btn btn-sm btn-success">
+                              <span class="bigger-110">注册</span>
+
+                              <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                            </button>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div><!-- /.widget-body -->
+                </div><!-- /.signup-box -->
+              </div><!-- /.position-relative -->
+
+            </div>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.main-content -->
+    </div><!-- /.main-container -->
+
+    <!-- basic scripts -->
+
+    <!--[if !IE]> -->
+    <script type="text/javascript">
+      window.jQuery || document.write("<script src='/static/js/jquery.min.js'>"+"<"+"/script>");
+    </script>
+
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script type="text/javascript">
+     window.jQuery || document.write("<script src='/static/js/jquery1x.min.js'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+    <script type="text/javascript">
+      if('ontouchstart' in document.documentElement) document.write("<script src='/static/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+    </script>
+
+  </body>
+</html>

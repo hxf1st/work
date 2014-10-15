@@ -1,0 +1,14 @@
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.DAL\bin\Debug\JiDian.DAL.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.DAL\bin\Debug\JiDian.DAL.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.DAL\bin\Debug\JiDian.Model.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.DAL\bin\Debug\JiDian.Model.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.DAL\obj\Debug\JiDian.DAL.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\JiDian.DAL\obj\Debug\JiDian.DAL.pdb
+D:\JiDian\JiDian.DAL\bin\Debug\JiDian.DAL.dll
+D:\JiDian\JiDian.DAL\bin\Debug\JiDian.DAL.pdb
+D:\JiDian\JiDian.DAL\bin\Debug\JiDian.Model.dll
+D:\JiDian\JiDian.DAL\bin\Debug\JiDian.Model.pdb
+D:\JiDian\JiDian.DAL\obj\Debug\JiDian.DAL.csprojResolveAssemblyReference.cache
+D:\JiDian\JiDian.DAL\obj\Debug\JiDian.DAL.dll
+D:\JiDian\JiDian.DAL\obj\Debug\JiDian.DAL.pdb

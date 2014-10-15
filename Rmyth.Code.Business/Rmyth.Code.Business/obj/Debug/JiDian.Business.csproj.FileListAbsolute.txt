@@ -1,0 +1,4 @@
+D:\JiDian\Rmyth.Code.Business\Rmyth.Code.Business\bin\Debug\Rmyth.Code.Business.exe
+D:\JiDian\Rmyth.Code.Business\Rmyth.Code.Business\bin\Debug\Rmyth.Code.Business.pdb
+D:\JiDian\Rmyth.Code.Business\Rmyth.Code.Business\obj\Debug\Rmyth.Code.Business.exe
+D:\JiDian\Rmyth.Code.Business\Rmyth.Code.Business\obj\Debug\Rmyth.Code.Business.pdb

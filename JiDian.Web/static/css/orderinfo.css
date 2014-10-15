@@ -1,0 +1,58 @@
+body {
+  background-color: transparent;
+}
+.wizard-steps{
+  margin-top: 10px
+}
+.form-group {
+  margin-bottom: 6px
+}
+input[type=text]{
+  font-size: 13px
+}
+select {
+  height: 32px
+}
+.alert{
+  font-size: 13px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+.well{
+  margin-bottom: 8px
+}
+.well label{
+  font-size: 13px
+}
+.displaynone {
+  display: none;
+}
+td.col-action {
+  padding: 0px 2px !important;
+  vertical-align: middle !important;
+  text-align: center;
+  width: 80px;
+}
+
+table>thead{
+  display: none;
+}
+label {
+  font-size: 13px;
+}
+.widget-header{
+  cursor: pointer;
+}
+
+.table .td1 {
+  width: 80px;
+  text-align: right;
+  vertical-align: middle;
+}
+.table p {
+  margin: 4px 0;
+}
+.tags {
+  border: none;
+  background-color: transparent;
+}

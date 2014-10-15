@@ -1,0 +1,5 @@
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\Web\bin\Web.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\Web\bin\Web.pdb
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\Web\obj\Debug\Web.dll
+C:\Users\Luffy\Documents\Visual Studio 2008\Projects\JiDian\Web\obj\Debug\Web.pdb

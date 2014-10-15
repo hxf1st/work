@@ -1,0 +1,222 @@
+﻿#include("header.html")
+
+<div class="main-container" id="main-container">
+
+  <div class="page-content">
+    <div class="page-content-area">
+      <div class="row">
+
+        <div class="widget-box transparent collapsed">
+          <div class="widget-header ">
+            
+            <div class="widget-toolbar no-border pull-left">
+              <button class="btn btn-xs bigger btn-warning" data-toggle="modal" data-backdrop="false" data-target="#modalInfo">
+								<i class="ace-icon fa fa-plus"></i> 添加
+							</button>
+            </div>
+            
+            <h4 class="widget-title lighter pull-left">
+							页面设置 <small></small>
+						</h4>
+            
+          </div>
+
+        </div>
+        
+        #if($data.Count>0)
+        <div class="content" id="div_data">
+          <table id="datalist" class="table table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>pagename</th>
+								<th>url</th>
+								<th>ordernum</th>
+								<th>isnav</th>
+								<th>remark</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							#foreach($tr in $data)
+							<tr>
+								<td>$tr.page_name</td>
+								<td>$tr.url</td>
+								<td>$tr.ordernum</td>
+								<td>$tr.isnav</td>
+								<td>$tr.remark</td>
+                <td class="col-action col-center">
+                  <div class="btn-group">
+									  <button data-toggle="dropdown" class="btn btn-sm btn-default btn-white dropdown-toggle">
+									    操作 <span class="ace-icon fa fa-caret-down icon-on-right"></span>
+									  </button>
+									  <ul class="dropdown-menu dropdown-info dropdown-menu-right">
+									    <li><a href="#" data="$cls.int_encode($tr.id,'P')" data-toggle="modal" data-backdrop="false" data-target="#modalInfo">编辑</a></li>
+									    <li class="divider"></li>
+									    <li><a href="page_permissions.aspx?pageid=$cls.int_encode($tr.id,'P')">设置页面权限</a></li>
+									  </ul>
+									 </div>
+                </td>
+							</tr>					
+							#end			
+						</tbody>
+					</table>
+        </div>
+        #else
+        <div class="alert alert-warning" id="div_nodata">没有找到您需要的数据</div>
+        #end
+      </div>
+    </div>
+
+  </div>
+  
+  
+	<div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="modalLabel">PAGE SETTING</h4>
+				</div>
+				<div class="modal-body">
+					<form id="form1" class="form-horizontal">
+						<div class="row">
+							<input type="hidden" value="" id="page_id" name="page_id">
+							<div class="form-group col-md-12">
+								<label class="col-md-2 control-label no-padding-right" for="pagecategory">pagecategory：</label>
+								<div class="col-md-9">
+									<div class="clearfix">
+										<select class="col-sm-12" id="pagecategory" name="pagecategory">
+											<option value=1>pagetype1</option>
+											<option value=2>pagetype2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-2 control-label no-padding-right" for="pagename">pagename：</label>
+								<div class="col-md-9">
+									<input type="text" class="col-sm-12" id="pagename" name="pagename">
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-2 control-label no-padding-right" for="url">URL：</label>
+								<div class="col-md-9">
+									<input type="text" class="col-sm-12" id="url" name="url">
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-2 control-label no-padding-right" for="ordernum">ordernum：</label>
+								<div class="col-md-9">
+									<input type="text" class="col-sm-12" id="ordernum" name="ordernum">
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-2 control-label no-padding-right" for="isnav">isnav：</label>
+								<div class="col-md-9">
+									<select class="col-sm-12" id="isnav" name="isnav">
+										<option value=1>YES</option>
+										<option value=0>NO</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<label class="col-md-2 control-label no-padding-right" for="remark">remark：</label>
+								<div class="col-md-9">
+									<input type="text" class="col-sm-12" id="remark" name="remark">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary btn-sm" id="btn_save">保存更改</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+  
+<script type="text/javascript">
+	var table = undefined;
+	var _data = (function($){
+		var obj = {}
+
+		obj.initTable = function(table_name){
+			return jQuery("#" + table_name).dataTable({
+				initComplete: function () {
+					$('div.dataTables_scrollBody').css('overflow',"inherit");
+				}
+			})
+		}
+		return obj;
+
+	}(window.jQuery)) || {};
+
+	var post_options = {
+	  url: "../handler/pages.ashx?action=save",
+	  dataType: "json",
+	  type: "post",
+	  clearForm: true,
+	  beforeSubmit: function() {
+	    return $('#form1').valid()
+	  },
+	  success: function(response, status) {
+	    if (response.StatusCode == 200) {
+	      $("#modalInfo").modal("hide");
+	      window.location.reload();
+	    }
+	  }
+	}
+
+	jQuery(function($) {
+		$('.modal').drags({ handle: '.modal-header' });
+		
+		$('#modalInfo').on('show.bs.modal', function(e) {
+			$("#form1 input").val("");
+			data = $(e.relatedTarget).attr("data");
+			if (data != undefined) {
+				jQuery.getJSON("../handler/pages.ashx?action=info&id=" + data, function(response) {
+					$("#page_id").val(response.Data.Id_Ex);
+					$("#pagecategory").val(response.Data.Category_id);
+					$("#pagename").val(response.Data.Page_name);
+					$("#url").val(response.Data.Url);
+					$("#ordernum").val(response.Data.Ordernum);
+					$("#isnav").val(response.Data.Isnav);
+					$("#remark").val(response.Data.Remark);
+				})
+			}
+		})
+
+		$("#btn_save").click(function() {
+			$("#form1").ajaxSubmit(post_options);
+			return false;
+		})
+
+		$('#form1').validate({
+			errorElement: 'div',
+			errorClass: 'help-block',
+			focusInvalid: false,
+			rules: {
+				pagename: { required: true },
+				url: { required: true }
+			},
+			messages: {
+				pagename: "请输入pagename",
+				url: "请输入url"
+			},
+			highlight: function(e) {
+				$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+			},
+			success: function(e) {
+				$(e).closest('.form-group').removeClass('has-error');
+				$(e).remove();
+			}
+		});
+		table = _data.initTable("datalist");
+	})
+ </script>
+
+#include("bottom.html")

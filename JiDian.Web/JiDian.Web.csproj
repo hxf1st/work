@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0073FF21-D4ED-40F7-A8D2-639AC1B6CA75}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JiDian.Web</RootNamespace>
+    <AssemblyName>JiDian.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JiDian.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\JiDian.Framework\bin\Debug\JiDian.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.5.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="static\avatars\avatar.png" />
+    <Content Include="static\css\ace-fonts.css" />
+    <Content Include="static\css\ace-ie.min.css" />
+    <Content Include="static\css\ace-part2.min.css" />
+    <Content Include="static\css\ace-skins.min.css" />
+    <Content Include="static\css\ace.min.css" />
+    <Content Include="static\css\bootstrap-datetimepicker.css" />
+    <Content Include="static\css\bootstrap-timepicker.css" />
+    <Content Include="static\css\bootstrap.min.css" />
+    <Content Include="static\css\chosen-sprite%402x.png" />
+    <Content Include="static\css\chosen-sprite.png" />
+    <Content Include="static\css\chosen.css" />
+    <Content Include="static\css\datepicker.css" />
+    <Content Include="static\css\font-awesome.min.css" />
+    <Content Include="static\css\images\border.png" />
+    <Content Include="static\css\images\border1.png" />
+    <Content Include="static\css\images\border2.png" />
+    <Content Include="static\css\images\controls.png" />
+    <Content Include="static\css\images\ie6\borderBottomCenter.png" />
+    <Content Include="static\css\images\ie6\borderBottomLeft.png" />
+    <Content Include="static\css\images\ie6\borderBottomRight.png" />
+    <Content Include="static\css\images\ie6\borderMiddleLeft.png" />
+    <Content Include="static\css\images\ie6\borderMiddleRight.png" />
+    <Content Include="static\css\images\ie6\borderTopCenter.png" />
+    <Content Include="static\css\images\ie6\borderTopLeft.png" />
+    <Content Include="static\css\images\ie6\borderTopRight.png" />
+    <Content Include="static\css\images\loading.gif" />
+    <Content Include="static\css\images\loading_background.png" />
+    <Content Include="static\css\images\meteorshower.jpg" />
+    <Content Include="static\css\images\meteorshower2.jpg" />
+    <Content Include="static\css\images\overlay.png" />
+    <Content Include="static\css\images\pattern.jpg" />
+    <Content Include="static\css\images\pattern.png" />
+    <Content Include="static\css\images\spritemap%402x.png" />
+    <Content Include="static\css\images\spritemap.png" />
+    <Content Include="static\css\img\alpha.png" />
+    <Content Include="static\css\img\hue.png" />
+    <Content Include="static\css\img\saturation.png" />
+    <Content Include="static\css\layout.css" />
+    <Content Include="static\css\orderinfo.css" />
+    <Content Include="static\css\prettify.css" />
+    <Content Include="static\css\select2-spinner.gif" />
+    <Content Include="static\css\select2.css" />
+    <Content Include="static\css\select2.png" />
+    <Content Include="static\css\select2x2.png" />
+    <Content Include="static\fonts\fontawesome-webfont.svg" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="static\images\back_disabled.png" />
+    <Content Include="static\images\back_enabled.png" />
+    <Content Include="static\images\back_enabled_hover.png" />
+    <Content Include="static\images\forward_disabled.png" />
+    <Content Include="static\images\forward_enabled.png" />
+    <Content Include="static\images\forward_enabled_hover.png" />
+    <Content Include="static\images\sort_asc.png" />
+    <Content Include="static\images\sort_asc_disabled.png" />
+    <Content Include="static\images\sort_both.png" />
+    <Content Include="static\images\sort_desc.png" />
+    <Content Include="static\images\sort_desc_disabled.png" />
+    <Content Include="static\images\spritemap%402x.png" />
+    <Content Include="static\images\spritemap.png" />
+    <Content Include="static\img\clear.png" />
+    <Content Include="static\img\glyphicons-halflings-white.png" />
+    <Content Include="static\img\glyphicons-halflings.png" />
+    <Content Include="static\img\loading.gif" />
+    <Content Include="static\js\ace-elements.min.js" />
+    <Content Include="static\js\ace-extra.min.js" />
+    <Content Include="static\js\ace.min.js" />
+    <Content Include="static\js\additional-methods.min.js" />
+    <Content Include="static\js\area.js" />
+    <Content Include="static\js\bootstrap-colorpicker.min.js" />
+    <Content Include="static\js\bootstrap-tabdrop.js" />
+    <Content Include="static\js\bootstrap-tag.min.js" />
+    <Content Include="static\js\bootstrap-typeahead.js" />
+    <Content Include="static\js\bootstrap-typeahead3.js" />
+    <Content Include="static\js\bootstrap-wysiwyg.min.js" />
+    <Content Include="static\js\bootstrap.min.js" />
+    <Content Include="static\js\chosen.jquery.min.js" />
+    <Content Include="static\js\core.js" />
+    <Content Include="static\js\date-time\bootstrap-datepicker.min.js" />
+    <Content Include="static\js\date-time\bootstrap-datetimepicker.min.js" />
+    <Content Include="static\js\date-time\bootstrap-timepicker.min.js" />
+    <Content Include="static\js\date-time\daterangepicker.min.js" />
+    <Content Include="static\js\date-time\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="static\js\date-time\moment.min.js" />
+    <Content Include="static\js\dimensions.js" />
+    <Content Include="static\js\drag-drop.js" />
+    <Content Include="static\js\fnReloadAjax.js" />
+    <Content Include="static\js\html5shiv.js" />
+    <Content Include="static\js\html5shiv.min.js" />
+    <Content Include="static\js\jquery-ui.js" />
+    <Content Include="static\js\jquery.dataTables.bootstrap.js" />
+    <Content Include="static\js\jquery.dataTables.min.js" />
+    <Content Include="static\js\jquery.drag.js" />
+    <Content Include="static\js\jquery.easy-pie-chart-older.js" />
+    <Content Include="static\js\jquery.easy-pie-chart.min.js" />
+    <Content Include="static\js\jquery.easypiechart.min.js" />
+    <Content Include="static\js\jquery.form.js" />
+    <Content Include="static\js\jquery.min.js" />
+    <Content Include="static\js\jquery.mobile.custom.min.js" />
+    <Content Include="static\js\jquery.tabPages.js" />
+    <Content Include="static\js\jquery.validate.js" />
+    <Content Include="static\js\jquery.validate.min.js" />
+    <Content Include="static\js\jquery1x.min.js" />
+    <Content Include="static\js\mockjax.js" />
+    <Content Include="static\js\prettify.js" />
+    <Content Include="static\js\region.js" />
+    <Content Include="static\js\respond.min.js" />
+    <Content Include="static\js\select2.min.js" />
+    <Content Include="static\js\suggest.js" />
+    <Content Include="static\js\typeahead.bundle.js" />
+    <Content Include="static\js\typeahead.jquery.min.js" />
+    <Content Include="templates\fogetpwd.html" />
+    <Content Include="templates\login.html" />
+    <Content Include="templates\register.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\account.ashx.cs">
+      <DependentUpon>account.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\BaseHandler.cs" />
+    <Compile Include="handler\pages.ashx.cs">
+      <DependentUpon>pages.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\roles.ashx.cs">
+      <DependentUpon>roles.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\users.ashx.cs">
+      <DependentUpon>users.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="libs\Helper.cs" />
+    <Compile Include="libs\IResponseResult.cs" />
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="layout.Master.cs">
+      <DependentUpon>layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layout.Master.designer.cs">
+      <DependentUpon>layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sys\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sys\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sys\pages.aspx.cs">
+      <DependentUpon>pages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sys\pages.aspx.designer.cs">
+      <DependentUpon>pages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sys\page_permissions.aspx.cs">
+      <DependentUpon>page_permissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sys\page_permissions.aspx.designer.cs">
+      <DependentUpon>page_permissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sys\roles.aspx.cs">
+      <DependentUpon>roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sys\roles.aspx.designer.cs">
+      <DependentUpon>roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sys\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sys\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyCode.aspx.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerifyCode.aspx.designer.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\JiDian.BLL.dll" />
+    <Content Include="bin\JiDian.BLL.pdb" />
+    <Content Include="bin\JiDian.DAL.dll" />
+    <Content Include="bin\JiDian.DAL.pdb" />
+    <Content Include="bin\JiDian.Model.dll" />
+    <Content Include="bin\JiDian.Model.pdb" />
+    <Content Include="home.aspx" />
+    <Content Include="main.aspx" />
+    <Content Include="layout.Master" />
+    <Content Include="sys\index.aspx" />
+    <Content Include="sys\pages.aspx" />
+    <Content Include="sys\page_permissions.aspx" />
+    <Content Include="sys\roles.aspx" />
+    <Content Include="sys\users.aspx" />
+    <Content Include="templates\bottom.html" />
+    <Content Include="templates\header.html" />
+    <Content Include="templates\pages.html" />
+    <Content Include="templates\pages1.html" />
+    <Content Include="templates\roles.html" />
+    <Content Include="templates\users.html" />
+    <Content Include="VerifyCode.aspx" />
+    <Content Include="handler\pages.ashx" />
+    <Content Include="handler\users.ashx" />
+    <Content Include="handler\account.ashx" />
+    <Content Include="handler\roles.ashx" />
+    <None Include="static\fonts\fontawesome-webfont.eot" />
+    <None Include="static\fonts\fontawesome-webfont.ttf" />
+    <None Include="static\fonts\fontawesome-webfont.woff" />
+    <None Include="static\fonts\FontAwesome.otf" />
+    <None Include="static\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="static\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="static\font\cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" />
+    <None Include="static\font\DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff" />
+    <None Include="static\font\readme" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JiDian.BLL\JiDian.BLL.csproj">
+      <Project>{FA2A025D-5EEA-4CCA-9E36-A8C52DFBC034}</Project>
+      <Name>JiDian.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JiDian.Model\JiDian.Model.csproj">
+      <Project>{23AB5EDA-B381-4B29-A1C8-223E12F042D3}</Project>
+      <Name>JiDian.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52000</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
